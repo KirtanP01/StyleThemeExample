@@ -1,97 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/colorTint">
+    android:background="@color/colorTint1"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_margin="@dimen/screenMargin"
         android:gravity="center_horizontal"
-        >
-        
-        <TextView
-            android:layout_width="@dimen/editTextWidth"
-            android:layout_height="@dimen/editTextHeight"
-            android:text="First Name"
-            android:paddingTop="@dimen/topPadding"/>
-
-        <EditText
-            android:id="@+id/firstName"
-            android:inputType="textCapWords"
-            style="@style/editTextSettings"
-            />
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
-            android:text="Last Name"
             android:paddingTop="@dimen/topPadding"
-            />
+            android:text="First Name" />
 
         <EditText
+            android:id="@+id/phoneNum2"
+            android:layout_width="202dp"
+            android:layout_height="@dimen/editTextHeight"
+            android:inputType="number" />
+
+        <TextView
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
+            android:paddingTop="@dimen/topPadding"
+            android:text="Last Name" />
+
+        <EditText
             android:id="@+id/lastName"
-            android:inputType="textCapWords"
-            />
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="@dimen/editTextHeight"
+            android:inputType="textCapWords" />
 
         <TextView
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
-            android:text="Phone Number"
-            android:paddingTop="@dimen/topPadding"/>
+            android:paddingTop="@dimen/topPadding"
+            android:text="Phone Number" />
 
         <EditText
-            android:layout_width="@dimen/editTextWidth"
-            android:layout_height="@dimen/editTextHeight"
             android:id="@+id/phoneNum"
-            android:inputType="number"
-            />
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="@dimen/editTextHeight"
+            android:inputType="number" />
 
         <TextView
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
-            android:text="Email"
-            android:paddingTop="@dimen/topPadding"/>
+            android:paddingTop="@dimen/topPadding"
+            android:text="Email" />
 
         <EditText
-            android:layout_width="@dimen/editTextWidth"
-            android:layout_height="@dimen/editTextHeight"
             android:id="@+id/email"
-            android:inputType="textEmailAddress"
-            />
+            android:layout_width="@dimen/editTextWidth"
+            android:layout_height="@dimen/editTextHeight"
+            android:inputType="textEmailAddress" />
 
         <TextView
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
-            android:text="Password"
-            android:paddingTop="@dimen/topPadding"/>
-
-
+            android:paddingTop="@dimen/topPadding"
+            android:text="Password" />
 
         <EditText
+            android:id="@+id/password"
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
-            android:id="@+id/password"
             android:inputType="textPassword" />
-
-
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
             android:onClick="clickMe"
-            android:text="Click here"
-            android:layout_marginBottom="100dp"/>
+            android:text="Click here" />
 
 
     </LinearLayout>
-    
+
 </ScrollView>

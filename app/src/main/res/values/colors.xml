@@ -13,6 +13,11 @@
     <color name="colorGrey">#666B6B</color>
     <color name="colorTint">#77EEAEC4</color>
 
-
+    <!-- Color codes for blue mode -->
+    <color name="colorPrimary3">#0000FF</color>
+    <color name="colorPrimaryDark3">#00008B</color>
+    <color name="colorAccent3">#ADD8E6</color>
+    <color name="colorGrey1">#666B6B</color>
+    <color name="colorTint1">#9fd9d7</color>
 
 </resources>
